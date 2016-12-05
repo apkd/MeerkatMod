@@ -26,24 +26,39 @@ namespace Verse
 		{
 			base.Tick();
 
+			// initialize the graphic if null or life stage changed
 			if (lifeStageBefore != ageTracker.CurKindLifeStage || movementGraphic == null)
 			{
 				UpdateGraphic();
 				lifeStageBefore = ageTracker.CurKindLifeStage;
 			}
-			if (pather.MovingNow && !wasMovingBefore)
+
+			if (pather == null) return;
+
+			// set lying down graphic if fighting or moving
+			if (pather.MovingNow || IsFighting)
 			{
-				Drawer.renderer.graphics.nakedGraphic = movementGraphic;
-				Drawer.renderer.graphics.ClearCache();
-				wasMovingBefore = true;
+				if (!wasMovingBefore)
+				{
+					Drawer.renderer.graphics.nakedGraphic = movementGraphic;
+					Drawer.renderer.graphics.ClearCache();
+					wasMovingBefore = true;
+				}
 			}
-			else if (!pather.MovingNow && wasMovingBefore)
+
+			// restore default graphic
+			if (!pather.MovingNow && !IsFighting)
 			{
-				Drawer.renderer.graphics.nakedGraphic = ageTracker.CurKindLifeStage.bodyGraphicData.Graphic;
-				Drawer.renderer.graphics.ClearCache();
-				wasMovingBefore = false;
+				if (wasMovingBefore)
+				{
+					Drawer.renderer.graphics.nakedGraphic = ageTracker.CurKindLifeStage.bodyGraphicData.Graphic;
+					Drawer.renderer.graphics.ClearCache();
+					wasMovingBefore = false;
+				}
 			}
 		}
+
+		private bool IsFighting => CurJob?.def == JobDefOf.AttackMelee;
 
 		/// <summary> Set the movementGraphic based on the current life stage </summary>
 		private void UpdateGraphic()
