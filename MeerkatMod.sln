@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeerkatMod", "Source\MeerkatMod.csproj", "{141D4447-F869-4A03-960E-4EBC1FCB4A0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Defs", "Defs", "{E119735E-E19F-4C91-AE23-A16ACC46925A}"
+	ProjectSection(SolutionItems) = preProject
+		Defs\Races_Animal_Pet.xml = Defs\Races_Animal_Pet.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Textures", "Textures", "{6D6E224C-B22A-458D-B77A-F9763A734432}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Pawn\Animal\Meerkat\meerkat_back.png = Textures\Things\Pawn\Animal\Meerkat\meerkat_back.png
+		Textures\Things\Pawn\Animal\Meerkat\meerkat_front.png = Textures\Things\Pawn\Animal\Meerkat\meerkat_front.png
+		Textures\Things\Pawn\Animal\Meerkat\meerkat_side.png = Textures\Things\Pawn\Animal\Meerkat\meerkat_side.png
+		Textures\Things\Pawn\Animal\Meerkat\meerkat_small_back.png = Textures\Things\Pawn\Animal\Meerkat\meerkat_small_back.png
+		Textures\Things\Pawn\Animal\Meerkat\meerkat_small_front.png = Textures\Things\Pawn\Animal\Meerkat\meerkat_small_front.png
+		Textures\Things\Pawn\Animal\Meerkat\meerkat_small_side.png = Textures\Things\Pawn\Animal\Meerkat\meerkat_small_side.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{0D8D379E-EB3B-464E-9E0E-44962D7AC040}"
+	ProjectSection(SolutionItems) = preProject
+		About\About.xml = About\About.xml
+		License.md = License.md
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{141D4447-F869-4A03-960E-4EBC1FCB4A0C}.Debug|Any CPU.ActiveCfg = RimWorld|Any CPU
+		{141D4447-F869-4A03-960E-4EBC1FCB4A0C}.Debug|Any CPU.Build.0 = RimWorld|Any CPU
+		{141D4447-F869-4A03-960E-4EBC1FCB4A0C}.Release|Any CPU.ActiveCfg = RimWorld|Any CPU
+		{141D4447-F869-4A03-960E-4EBC1FCB4A0C}.Release|Any CPU.Build.0 = RimWorld|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
