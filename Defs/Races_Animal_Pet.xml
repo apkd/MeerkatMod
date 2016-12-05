@@ -55,21 +55,21 @@
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
 				<defaultCooldownTicks>110</defaultCooldownTicks>
-				<meleeDamageBaseAmount>2</meleeDamageBaseAmount>
+				<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
 				<meleeDamageDef>Scratch</meleeDamageDef>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
 				<defaultCooldownTicks>110</defaultCooldownTicks>
-				<meleeDamageBaseAmount>2</meleeDamageBaseAmount>
+				<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
 				<meleeDamageDef>Scratch</meleeDamageDef>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
 				<defaultCooldownTicks>80</defaultCooldownTicks>
-				<meleeDamageBaseAmount>5</meleeDamageBaseAmount>
+				<meleeDamageBaseAmount>8</meleeDamageBaseAmount>
 				<meleeDamageDef>Bite</meleeDamageDef>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -100,7 +100,7 @@
 			<maxPreyBodySize>0.3</maxPreyBodySize>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHungerRate>0.05</baseHungerRate>
-			<baseHealthScale>0.5</baseHealthScale>
+			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal, AnimalProduct</foodType>
 			<leatherInsulation>0.6</leatherInsulation>
 			<wildness>0.7</wildness>
@@ -156,11 +156,11 @@
 		<defName>Meerkat</defName>
 		<label>meerkat</label>
 		<race>Meerkat</race>
-		<combatPower>40</combatPower>
+		<combatPower>50</combatPower>
 		<wildSpawn_spawnWild>true</wildSpawn_spawnWild>
 		<wildSpawn_EcoSystemWeight>0.02</wildSpawn_EcoSystemWeight>
 		<wildSpawn_GroupSizeRange>
-			<min>2</min>
+			<min>3</min>
 			<max>7</max>
 		</wildSpawn_GroupSizeRange>
 		<lifeStages>
