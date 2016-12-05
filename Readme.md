@@ -17,3 +17,9 @@ Usage
 
 Simply clone this repository to your `steamapps/common/RimWorld/Mods` folder or
 add the mod from [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=812827396).
+
+
+Compatibility
+-------------
+
+This mod doesn't override any classes or defs and *should* be compatible with most other mods. Your mileage may vary.
