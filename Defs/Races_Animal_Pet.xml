@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<LifeStageDef>
-		<defName>Meerkat_AnimalOld</defName>
+		<defName>AnimalOld_Meerkat</defName>
 		<label>adult</label>
 		<visible>false</visible>
 		<reproductive>false</reproductive>
@@ -40,7 +40,7 @@
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<statBases>
 			<Flammability>1.0</Flammability>
-			<LeatherAmount>20</LeatherAmount>
+			<LeatherAmount>10</LeatherAmount>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
@@ -97,17 +97,17 @@
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdAnimal>true</herdAnimal>
-			<maxPreyBodySize>0.25</maxPreyBodySize>
-			<baseBodySize>0.255</baseBodySize>
+			<maxPreyBodySize>0.3</maxPreyBodySize>
+			<baseBodySize>0.3</baseBodySize>
 			<baseHungerRate>0.05</baseHungerRate>
 			<baseHealthScale>0.5</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal, AnimalProduct</foodType>
 			<leatherInsulation>0.6</leatherInsulation>
-			<wildness>0.4</wildness>
+			<wildness>0.7</wildness>
 			<petness>1</petness>
 			<trainableIntelligence>Simple</trainableIntelligence>
 			<mateMtbHours>8</mateMtbHours>
-			<nuzzleMtbHours>4</nuzzleMtbHours>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<nameOnTameChance>0.25</nameOnTameChance>
 			<litterSizeCurve>
@@ -134,7 +134,7 @@
 					<minAge>1.50</minAge>
 				</li>
 				<li>
-					<def>Meerkat_AnimalOld</def>
+					<def>AnimalOld_Meerkat</def>
 					<minAge>9</minAge>
 				</li>
 			</lifeStageAges>
