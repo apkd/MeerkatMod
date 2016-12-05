@@ -1,3 +1,5 @@
+![MeerkatMod](About/Preview.png)
+
 Meerkat Mod
 ===========
 
