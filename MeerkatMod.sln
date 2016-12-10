@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeerkatMod", "Source\Meerka
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Defs", "Defs", "{E119735E-E19F-4C91-AE23-A16ACC46925A}"
 	ProjectSection(SolutionItems) = preProject
-		Defs\Races_Animal_Pet.xml = Defs\Races_Animal_Pet.xml
+		Defs\Meerkat.xml = Defs\Meerkat.xml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Textures", "Textures", "{6D6E224C-B22A-458D-B77A-F9763A734432}"

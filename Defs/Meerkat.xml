@@ -43,7 +43,7 @@
 			<LeatherAmount>10</LeatherAmount>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
-			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ComfyTemperatureMax>64</ComfyTemperatureMax>
 			<MarketValue>120</MarketValue>
 		</statBases>
 		<recipes>
@@ -102,7 +102,8 @@
 			<baseHungerRate>0.05</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal, AnimalProduct</foodType>
-			<leatherInsulation>0.6</leatherInsulation>
+			<leatherInsulation>0.5</leatherInsulation>
+			<leatherColor>(178, 152, 138)</leatherColor>
 			<wildness>0.7</wildness>
 			<petness>1</petness>
 			<trainableIntelligence>Simple</trainableIntelligence>
@@ -115,11 +116,11 @@
 					<li>(0.5, 0)</li>
 					<li>(1, 1)</li>
 					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
+					<li>(4, 0.7)</li>
+					<li>(6, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -135,16 +136,16 @@
 				</li>
 				<li>
 					<def>AnimalOld_Meerkat</def>
-					<minAge>9</minAge>
+					<minAge>10</minAge>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<wildBiomes>
-				<AridShrubland>1</AridShrubland>
-				<Desert>3</Desert>
-				<ExtremeDesert>6</ExtremeDesert>
+				<AridShrubland>0.4</AridShrubland>
+				<Desert>0.6</Desert>
+				<ExtremeDesert>0.8</ExtremeDesert>
 			</wildBiomes>
 		</race>
 		<tradeTags>
@@ -160,15 +161,15 @@
 		<wildSpawn_spawnWild>true</wildSpawn_spawnWild>
 		<wildSpawn_EcoSystemWeight>0.02</wildSpawn_EcoSystemWeight>
 		<wildSpawn_GroupSizeRange>
-			<min>3</min>
-			<max>7</max>
+			<min>2</min>
+			<max>4</max>
 		</wildSpawn_GroupSizeRange>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Meerkat/meerkat_small</texPath>
 					<drawSize>1.3</drawSize>
-					<color>(178, 152, 138)</color>
+					<color>(238, 230, 228)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
@@ -179,7 +180,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Meerkat/meerkat_small</texPath>
 					<drawSize>1.5</drawSize>
-					<color>(182, 162, 152)</color>
+					<color>(243, 227, 219)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
@@ -190,10 +191,10 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Meerkat/meerkat</texPath>
 					<drawSize>1.6</drawSize>
-					<color>(186, 173, 166)</color>
+					<color>(243, 227, 219)</color>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
+						<offset>(0,0,-0.4)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -204,11 +205,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Meerkat/meerkat</texPath>
-					<drawSize>1.65</drawSize>
-					<color>(202, 185, 177)</color>
+					<drawSize>1.7</drawSize>
+					<color>(235, 220, 210)</color>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
+						<offset>(0,0,-0.4)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
