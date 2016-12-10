@@ -29,7 +29,7 @@ namespace Verse
 			// initialize the graphic if null or life stage changed
 			if (lifeStageBefore != ageTracker.CurKindLifeStage || movementGraphic == null)
 			{
-				UpdateGraphic();
+				UpdateMovementGraphic();
 				lifeStageBefore = ageTracker.CurKindLifeStage;
 			}
 
@@ -61,11 +61,20 @@ namespace Verse
 		private bool IsFighting => CurJob?.def == JobDefOf.AttackMelee;
 
 		/// <summary> Set the movementGraphic based on the current life stage </summary>
-		private void UpdateGraphic()
+		private void UpdateMovementGraphic()
 		{
 			var data = new GraphicData();
 			data.CopyFrom(ageTracker.CurKindLifeStage.bodyGraphicData);
 			data.texPath = data.texPath + "_moving";
+
+			if (data.shadowData != null)  // meerkat-specific shadow fix
+			{
+				var shadow = new ShadowData();
+				shadow.volume = data.shadowData.volume + new UnityEngine.Vector3(0.15f, -0.15f, -0.1f);
+				shadow.offset = data.shadowData.offset + new UnityEngine.Vector3(0, 0, 0.18f);
+				data.shadowData = shadow;
+			}
+
 			movementGraphic = data.Graphic;
 		}
 	}
