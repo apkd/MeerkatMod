@@ -1,6 +1,6 @@
 ![MeerkatMod](About/Preview.png)
 
-Meerkat Mod
+RimWorld - MeerkatMod
 ===========
 
 Introduction

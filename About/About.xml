@@ -3,8 +3,6 @@
   <name>MeerkatMod</name>
   <author>apkd</author>
   <url>https://github.com/apkd/MeerkatMod/</url>
-  <targetVersion>0.15.1284</targetVersion>
-  <description>
-    This mod adds meerkats!
-  </description>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>This mod adds meerkats!</description>
 </ModMetaData>
