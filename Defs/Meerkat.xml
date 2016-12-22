@@ -54,22 +54,38 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTicks>110</defaultCooldownTicks>
-				<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
-				<meleeDamageDef>Scratch</meleeDamageDef>
-				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTicks>110</defaultCooldownTicks>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+        <meleeDamageDef>Scratch</meleeDamageDef>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
 				<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
 				<meleeDamageDef>Scratch</meleeDamageDef>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
 			</li>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTicks>80</defaultCooldownTicks>
-				<meleeDamageBaseAmount>8</meleeDamageBaseAmount>
+				<defaultCooldownTime>1.30</defaultCooldownTime>
+				<meleeDamageBaseAmount>6</meleeDamageBaseAmount>
 				<meleeDamageDef>Bite</meleeDamageDef>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -206,7 +222,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Meerkat/meerkat</texPath>
 					<drawSize>1.7</drawSize>
-					<color>(235, 220, 210)</color>
+					<color>(230, 215, 205)</color>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.4)</offset>
