@@ -71,7 +71,10 @@ namespace Verse
 			base.Tick();
 
 			if (GenTicks.TicksAbs % Frameskip != FrameskipOffset) return; // frameskip
+			if (!Spawned) return;
+			if (Destroyed) return;
 			if (pather == null) return; // this can occur if the pawn leaves the map area
+			if (Drawer?.renderer == null) return;
 
 			// initialize the replacement graphics (once per lifestage)
 			if (lifeStageBefore != ageTracker.CurKindLifeStage)
@@ -81,7 +84,7 @@ namespace Verse
 			}
 
 			// avoid hunting tamed animals, accept non-ideal food instead
-			if (Faction != Faction.OfPlayer && jobs.curJob.def == JobDefOf.PredatorHunt)
+			if (Faction != Faction.OfPlayer && jobs?.curJob?.def == JobDefOf.PredatorHunt)
 			{
 				if ((jobs.curJob.targetA.Thing as Pawn)?.Faction == Faction.OfPlayer)
 				{
