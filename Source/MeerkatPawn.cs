@@ -53,6 +53,15 @@ namespace Verse
 			var data = new GraphicData();
 			data.CopyFrom(ageTracker.CurKindLifeStage.bodyGraphicData);
 			data.texPath = path;
+
+			if (data.shadowData != null && variant == "moving")  // meerkat-specific shadow fix
+			{
+				var shadow = new ShadowData();
+				shadow.volume = data.shadowData.volume + new Vector3(0.15f, -0.15f, -0.1f);
+				shadow.offset = data.shadowData.offset + new Vector3(0.04f, 0, 0.18f);
+				data.shadowData = shadow;
+			}
+
 			return data.Graphic;
 		}
 
