@@ -21,6 +21,9 @@ namespace Verse
 			.FirstOrDefault(x => x.Name == "MeerkatMod")
 			.GetContentHolder<Texture2D>();
 
+		private const int Frameskip = 16; // only update every n-th tick
+		private int FrameskipOffset { get; } = Rand.RangeInclusive(0, Frameskip - 1);
+
 		private bool IsMoving => pather.Moving;
 		private bool IsFighting => CurJob?.def == JobDefOf.AttackMelee;
 
@@ -58,6 +61,7 @@ namespace Verse
 		{
 			base.Tick();
 
+			if (GenTicks.TicksAbs % Frameskip != FrameskipOffset) return; // frameskip
 			if (pather == null) return; // this can occur if the pawn leaves the map area
 
 			// initialize the replacement graphics (once per lifestage)
